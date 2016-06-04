@@ -1,25 +1,146 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onepage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="ViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="250" image="20141230193127-work" translatesAutoresizingMaskIntoConstraints="NO" id="mhP-qN-idU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="4vV-KT-7R7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="Yj6-Xd-3Y8"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="263" id="y8F-jV-JRP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer by BILLY :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbK-NY-yZw">
+                                <rect key="frame" x="0.0" y="368" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.62745098040000002" green="0.43137254899999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TAN-pK-eaO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="tyR-1I-wDH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib0-FI-EnV">
+                                <rect key="frame" x="70" y="519" width="234" height="72"/>
+                                <color key="backgroundColor" red="0.28627450980392155" green="0.11764705882352941" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="s5F-mj-Wo8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Click To Next">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicktonext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ftd-RH-CoJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ib0-FI-EnV" secondAttribute="trailing" constant="71" id="24v-yU-7dR"/>
+                            <constraint firstItem="mhP-qN-idU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3BA-kJ-E0m"/>
+                            <constraint firstAttribute="trailing" secondItem="bbK-NY-yZw" secondAttribute="trailing" id="H1d-ET-x97"/>
+                            <constraint firstAttribute="trailing" secondItem="mhP-qN-idU" secondAttribute="trailing" id="Ko5-Fo-e6m"/>
+                            <constraint firstItem="Ib0-FI-EnV" firstAttribute="top" secondItem="bbK-NY-yZw" secondAttribute="bottom" constant="101" id="OQD-t8-Dgq"/>
+                            <constraint firstItem="bbK-NY-yZw" firstAttribute="top" secondItem="mhP-qN-idU" secondAttribute="bottom" constant="118" id="P8c-uU-2vg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bbK-NY-yZw" secondAttribute="trailing" id="Y0K-fr-fW7"/>
+                            <constraint firstItem="Ib0-FI-EnV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="byO-8m-yaK"/>
+                            <constraint firstItem="bbK-NY-yZw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rHm-RA-IJE"/>
+                            <constraint firstItem="mhP-qN-idU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ve9-La-3kQ"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-436.5" y="296.5"/>
+        </scene>
+        <!--Page2-->
+        <scene sceneID="N6w-Df-uHQ">
+            <objects>
+                <viewController storyboardIdentifier="twopage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GCC-1w-OBx" customClass="Page2" customModule="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U1Y-k8-UbK"/>
+                        <viewControllerLayoutGuide type="bottom" id="l38-s2-cTr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q7b-MX-70f" customClass="P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer by BILLY :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTd-9A-uSc">
+                                <rect key="frame" x="0.0" y="368" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="1oi-26-LI9"/>
+                                    <constraint firstAttribute="height" constant="50" id="zK7-pU-4qZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1G-h9-8xs">
+                                <rect key="frame" x="70" y="519" width="234" height="72"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="WFs-wD-4Eh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Click To Back">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicktoback:" destination="GCC-1w-OBx" eventType="touchUpInside" id="fRv-ad-Myh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="250" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="0oO-PW-yys">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="263" id="BJT-Lh-Cr5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="HNo-Ef-Q0W"/>
+                                    <constraint firstAttribute="height" constant="250" id="lzu-dS-wS3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="t1G-h9-8xs" firstAttribute="leading" secondItem="Q7b-MX-70f" secondAttribute="leading" constant="70" id="5cj-Un-BSq"/>
+                            <constraint firstItem="xTd-9A-uSc" firstAttribute="top" secondItem="0oO-PW-yys" secondAttribute="bottom" constant="118" id="J1A-XV-7Ei"/>
+                            <constraint firstItem="0oO-PW-yys" firstAttribute="leading" secondItem="Q7b-MX-70f" secondAttribute="leading" id="J1r-R3-3vB"/>
+                            <constraint firstAttribute="trailing" secondItem="t1G-h9-8xs" secondAttribute="trailing" constant="71" id="UgO-Kg-AeL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xTd-9A-uSc" secondAttribute="trailing" id="baW-H3-lsE"/>
+                            <constraint firstAttribute="trailing" secondItem="xTd-9A-uSc" secondAttribute="trailing" id="mjg-76-0Lm"/>
+                            <constraint firstItem="0oO-PW-yys" firstAttribute="top" secondItem="Q7b-MX-70f" secondAttribute="top" id="p7x-d0-hDX"/>
+                            <constraint firstItem="xTd-9A-uSc" firstAttribute="leading" secondItem="Q7b-MX-70f" secondAttribute="leading" id="r50-Ok-sXm"/>
+                            <constraint firstAttribute="trailing" secondItem="0oO-PW-yys" secondAttribute="trailing" id="v1V-b2-7yn"/>
+                            <constraint firstItem="t1G-h9-8xs" firstAttribute="top" secondItem="xTd-9A-uSc" secondAttribute="bottom" constant="101" id="yGK-FO-owX"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rL9-uL-p90" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.5" y="290.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="20141230193127-work" width="822" height="462"/>
+        <image name="test" width="960" height="960"/>
+    </resources>
 </document>

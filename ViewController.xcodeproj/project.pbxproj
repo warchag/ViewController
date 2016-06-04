@@ -14,6 +14,7 @@
 		A2C671D81CF72FFC00B33CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C671D61CF72FFC00B33CDA /* LaunchScreen.storyboard */; };
 		A2C671E31CF72FFD00B33CDA /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C671E21CF72FFD00B33CDA /* ViewControllerTests.swift */; };
 		A2C671EE1CF72FFD00B33CDA /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C671ED1CF72FFD00B33CDA /* ViewControllerUITests.swift */; };
+		A2C671FC1CF7335600B33CDA /* Page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C671FB1CF7335600B33CDA /* Page2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A2C671E91CF72FFD00B33CDA /* ViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C671ED1CF72FFD00B33CDA /* ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
 		A2C671EF1CF72FFD00B33CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C671FB1CF7335600B33CDA /* Page2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				A2C671CD1CF72FFC00B33CDA /* AppDelegate.swift */,
 				A2C671CF1CF72FFC00B33CDA /* ViewController.swift */,
+				A2C671FB1CF7335600B33CDA /* Page2.swift */,
 				A2C671D11CF72FFC00B33CDA /* Main.storyboard */,
 				A2C671D41CF72FFC00B33CDA /* Assets.xcassets */,
 				A2C671D61CF72FFC00B33CDA /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					A2C671C91CF72FFC00B33CDA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XQGB9J674P;
 					};
 					A2C671DD1CF72FFD00B33CDA = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -258,6 +262,7 @@
 			files = (
 				A2C671D01CF72FFC00B33CDA /* ViewController.swift in Sources */,
 				A2C671CE1CF72FFC00B33CDA /* AppDelegate.swift in Sources */,
+				A2C671FC1CF7335600B33CDA /* Page2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BILL.CO.TH.ViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BILL.CO.TH.ViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

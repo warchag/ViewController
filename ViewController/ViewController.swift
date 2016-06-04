@@ -20,6 +20,14 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
+	@IBAction func clicktonext(sender: UIButton) {
+		let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+		
+		let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("twopage")
+		self.presentViewController(nextViewController, animated:true, completion:nil)
+		
+		
+	}
 
 }
 
